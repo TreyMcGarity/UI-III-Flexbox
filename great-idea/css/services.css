@@ -31,9 +31,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -62,14 +64,12 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*started code here*/
 header {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 70px;
 }
 
 header nav a {
@@ -84,97 +84,65 @@ body {
 	align-items: center;
 }
 
-.title {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.services-header-img {
+    width: 800px;
 }
-
-.title h1 {
-	font-size: 70px;
-}
-
-button {
-	font-size: 16px;
-	height: 35px;
-	width: 170px; 
-	bottom: 195px;
-	background-color: white;
-	color: black;
-	border: 1px solid black;  
- }
-
- div aside {
-	 padding: 0 0 0 100px;
-	width: 50%;
-}
-
-div {
-	display: flex;
-	justify-content: flex-start;
-	width: 800px;
-}
-
 
 hr {
 	width: 800px;
 	color: black;
 }
 
-.middle-img {
-	width:800px;
+div {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+    width: 800px;
 }
 
-.features {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width: 49%;
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 350px;
+    height: 300px;
 }
 
-.about {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width: 49%;
+button .learn-more {
+    
+    display: flex;
+    justify-content: flex-end;
 }
 
 .services {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+    width: 800px;
 }
 
-.product {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+.digital-design {
+    margin: 20px 50px 20px 0;
 }
 
-.vision {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+.ux-ui {
+    margin: 20px 0 20px 50px;
 }
 
-.contact {
-	display: flex;
-	flex-direction: column;
-	padding: 30px 10px 30px 0;
+.digital-marketing {
+    margin: 20px 50px 20px 0;
 }
 
-.contact address {
-	margin: 0 0 20px 0;
+.web-development {
+    margin: 20px 0 20px 50px;
 }
-.contact a {
-	text-decoration: none;
-	color:black;
+
+.ios-development {
+    margin: 20px 50px 20px 0;
 }
-.contact p {
-	margin: 20px 0 0 0;
+
+.android-development {
+    margin: 20px 0 20px 50px;
 }
-footer {
-	margin: 50px;
-	text-align: center;
-	padding: 0 0 60px 0;
+
+.facts {
+
 }
