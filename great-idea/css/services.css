@@ -33,7 +33,7 @@ body {
 }
 
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 
 blockquote, q {
@@ -65,11 +65,20 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 /*started code here*/
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width: 800px;
 }
 
 header nav a {
@@ -78,71 +87,76 @@ header nav a {
 	color:silver;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .services-header-img {
     width: 800px;
 }
 
 hr {
-	width: 800px;
+    width: 800px;
+    margin: 20px 0 20px 0;
 	color: black;
 }
 
 div {
-    display: flex;
-    justify-content: row;
-    flex-wrap: wrap;
     width: 800px;
+} 
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid black;
-    width: 350px;
-    height: 300px;
+    background: rgb(224, 224, 224);
+    padding: 20px;
+    width: 380px;
+    height: 250px;
 }
 
-button .learn-more {
-    
-    display: flex;
-    justify-content: flex-end;
+button {
+    background: white;
+    color: black;
+    border: 2px solid #555555;
+    border-width: thin;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .services {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background: none;
     width: 800px;
+    height: 170px;
+    padding: 35px 0;
 }
 
-.digital-design {
-    margin: 20px 50px 20px 0;
-}
-
-.ux-ui {
-    margin: 20px 0 20px 50px;
-}
-
-.digital-marketing {
-    margin: 20px 50px 20px 0;
-}
-
-.web-development {
-    margin: 20px 0 20px 50px;
-}
-
-.ios-development {
-    margin: 20px 50px 20px 0;
-}
-
-.android-development {
-    margin: 20px 0 20px 50px;
+.services h2 {
+    font-size: 25px;
 }
 
 .facts {
+    display: flex;
+}
 
+.facts section {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background: none;
+    width: 50%;
+}
+
+footer {
+    margin: 50px;
 }
