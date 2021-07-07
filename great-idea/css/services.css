@@ -31,9 +31,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
+/* ol, ul {
+    list-style: none; 
+} */
+
 blockquote, q {
 	quotes: none;
 }
@@ -62,14 +64,21 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+/*started code here*/
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 70px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width: 800px;
 }
 
 header nav a {
@@ -78,103 +87,86 @@ header nav a {
 	color:silver;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.services-header-img {
+    width: 800px;
 }
 
-.title {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.title h1 {
-	font-size: 70px;
-}
-
-button {
-	font-size: 16px;
-	height: 35px;
-	width: 170px; 
-	bottom: 195px;
-	background-color: white;
+hr {
+    width: 800px;
+    margin: 20px 0 20px 0;
 	color: black;
-	border: 1px solid black;  
- }
-
- div aside {
-	 padding: 0 0 0 100px;
-	width: 50%;
 }
 
 div {
-	display: flex;
-	justify-content: flex-start;
-	width: 800px;
+    width: 800px;
+} 
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    background: rgb(224, 224, 224);
+    padding: 20px;
+    width: 380px;
+    height: 250px;
 }
 
-
-hr {
-	width: 800px;
-	color: black;
-}
-
-.middle-img {
-	width:800px;
-}
-
-.features {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width: 49%;
-}
-
-.about {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width: 49%;
+button {
+    background: white;
+    color: black;
+    border: 2px solid #555555;
+    border-width: thin;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .services {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background: none;
+    width: 800px;
+    height: 170px;
+    padding: 35px 0;
 }
 
-.product {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+.services h2 {
+    font-size: 25px;
 }
 
-.vision {
-	margin: auto;
-	padding: 30px 10px 30px 0;
-	width:33%;
+.facts {
+    display: flex;
 }
 
-.contact {
-	display: flex;
-	flex-direction: column;
-	padding: 30px 10px 30px 0;
+.facts section {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    background: none;
+    width: 50%;
 }
 
-.contact address {
-	margin: 0 0 20px 0;
+.facts section ul {
+    align-items: center;
+    text-align: left;
+    padding: 20px;
 }
-.contact a {
-	text-decoration: none;
-	color:black;
+.facts section ul li {
+    list-style-type: square;
+    padding-bottom: 10px;
 }
-.contact p {
-	margin: 20px 0 0 0;
-}
+
 footer {
-	margin: 50px;
-	text-align: center;
-	padding: 0 0 60px 0;
+    margin: 50px;
 }
